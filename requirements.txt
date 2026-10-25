@@ -1,0 +1,12 @@
+# Tazkara — المكتبات المطلوبة
+# التثبيت:  pip install -r requirements.txt
+# مُختبَر فعليًا على: Python 3.13 | discord.py 2.7.1 | cryptography 50.0.2 | pytest 9.0.3
+
+# الاتصال بـ Discord (يثبّت aiohttp تلقائيًا)
+discord.py>=2.4,<3
+
+# تشفير النسخ المحلية من الأرشيف (Fernet)
+cryptography>=42
+
+# للاختبارات فقط: pytest main.py -q
+pytest>=8

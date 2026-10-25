@@ -1,0 +1,38 @@
+# Tazkara — نتائج الاختبارات الفعلية
+# التاريخ: 2026-10-25 21:26 UTC
+# Python 3.13.16 | discord.py 2.7.1 | cryptography 50.0.2 | pytest 9.0.3 | SQLite 3.46.1
+# الأمر: pytest main.py -v
+
+main.py::test_01_open_ticket_normal PASSED                               [  3%]
+main.py::test_02_duplicate_ticket_blocked_in_python_and_db PASSED        [  6%]
+main.py::test_03_concurrent_open_clicks PASSED                           [ 10%]
+main.py::test_04_unprivileged_user_cannot_use_staff_buttons PASSED       [ 13%]
+main.py::test_05_stale_interactions_after_close_do_not_change_state PASSED [ 16%]
+main.py::test_06_channel_creation_failure PASSED                         [ 20%]
+main.py::test_06b_uncertain_creation_is_reconciled_not_duplicated PASSED [ 23%]
+main.py::test_07_db_write_failure PASSED                                 [ 26%]
+main.py::test_08_restart_with_open_tickets PASSED                        [ 30%]
+main.py::test_09_buttons_and_jobs_restored_after_restart PASSED          [ 33%]
+main.py::test_10_log_upload_failure_keeps_channel_then_recovers PASSED   [ 36%]
+main.py::test_10b_uncertain_upload_is_found_by_marker_not_duplicated PASSED [ 40%]
+main.py::test_11_local_write_failure_keeps_channel_then_recovers PASSED  [ 43%]
+main.py::test_12_encryption_or_integrity_failure_never_claims_success PASSED [ 46%]
+main.py::test_13_channel_never_deleted_before_both_archives PASSED       [ 50%]
+main.py::test_14_html_injection_is_neutralised PASSED                    [ 53%]
+main.py::test_15_sql_injection_inputs_are_inert PASSED                   [ 56%]
+main.py::test_16_inactivity_timer_frozen_during_hold PASSED              [ 60%]
+main.py::test_17_dm_failure_does_not_block_archiving PASSED              [ 63%]
+main.py::test_18_rate_limits_and_api_errors PASSED                       [ 66%]
+main.py::test_19_category_or_log_channel_changed_or_deleted PASSED       [ 70%]
+main.py::test_20_retention_never_deletes_the_only_valid_copy PASSED      [ 73%]
+main.py::test_db_triggers_enforce_state_machine PASSED                   [ 76%]
+main.py::test_reopen_racing_archive_completion_wins_cleanly PASSED       [ 80%]
+main.py::test_new_messages_after_transcript_force_rebuild PASSED         [ 83%]
+main.py::test_missing_attachments_require_explicit_admin_ack PASSED      [ 86%]
+main.py::test_missing_message_content_intent_blocks_deletion PASSED      [ 90%]
+main.py::test_secrets_never_logged_and_placeholder_refused PASSED        [ 93%]
+main.py::test_main_refuses_placeholder_token PASSED                      [ 96%]
+main.py::test_permissions_are_minimal PASSED                             [100%]
+============================== 30 passed in 0.76s ==============================
+
+# pyflakes main.py: لا أخطاء
